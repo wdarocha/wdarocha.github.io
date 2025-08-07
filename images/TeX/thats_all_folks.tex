@@ -1,0 +1,34 @@
+%!TEX TS-program = xelatex
+
+\documentclass[12pt]{standalone}
+
+\usepackage[tightpage]{preview}
+\usepackage{tikz}
+
+\usetikzlibrary{decorations.text, shadows}
+\pagestyle{empty}
+
+\usepackage{fontspec}
+\newfontfamily\looney[]{That's Font Folks!}
+\definecolor{darkblueOuter}{RGB}{1,11,23}
+\definecolor{darkblueInner}{RGB}{1,18,37}
+
+\begin{document}
+	\begin{preview}
+		\begin{tikzpicture}[scale=0.5, every shadow/.style={opacity=1,fill=blue!10!black}, line cap = round]
+			\clip(-15, -7) rectangle (15, 7);
+			
+			\looney
+			\fontsize{25pt}{1em}\selectfont
+				
+			\foreach \l in {6.8, 5.8, ..., 1.8} {
+			\path[circular glow = {shadow scale=1.03}, shading=radial, inner color=yellow!80!white, outer color=red!50!black] (0, 0) circle (\l cm);
+			}
+			\path[circular glow={shadow scale=1.03}, shading=radial, inner color=blue!25!black, outer color=darkblueOuter] (0, 0) circle (1.8cm);
+				
+			\node (a) at (-5.4, -2.8) {};
+			\node (b) at (7, -1.8) {};
+			\draw[decoration={text along path, text color=white, text={That's all Folks!}}, decorate] (a) to[bend left=30] (b);
+		\end{tikzpicture}
+	\end{preview}
+\end{document}
