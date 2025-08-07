@@ -10,7 +10,7 @@ mathjax: true
 
 ### 2025  
 - 2nd Semester  
-  → [Analytic Geometry and Vectors](/teaching/2s2025_MA141D/)
+  → [Analytic Geometry and Vectors](/teaching/2s2025_MA141D)
 
 ### Voluntary Teaching
 
