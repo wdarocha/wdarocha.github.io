@@ -12,6 +12,10 @@ layout: default
   {% endunless %}
 {% endif %}
 
+{% if page.mathjax %}
+  {% include mathjax.html %}
+{% endif %}
+
 <div id="main" role="main">
   {% include sidebar.html %}
 
