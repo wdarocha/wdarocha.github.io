@@ -39,5 +39,5 @@ Thanks for stopping by -- and feel free to say hi!
 ======
 ------
 <div class="text-center">
-	<img src="/images/thats_all_folks.png" alt="That's all folks!" />
+  <img src="{{ '/images/thats_all_folks.png' | relative_url }}" alt="That's all folks!" />
 </div>

@@ -16,11 +16,11 @@ description     : "Researcher | Academic | Data Analyst"
 
 # URL de base (correto para repositório do tipo usuario.github.io)
 # Para o site no dominio do git
-#url             : "https://wdarocha.github.io"
-#baseurl         : ""
+url             : "https://wdarocha.github.io"
+baseurl         : ""
 # Para o site no dominio do IMECC
-url             : "https://www.ime.unicamp.br"
-baseurl         : "/~wdarocha"
+#url             : "https://www.ime.unicamp.br"
+#baseurl         : "/~wdarocha"
 
 # Repositório correto (o seu, não o do template!)
 repository      : "wdarocha/wdarocha.github.io"
